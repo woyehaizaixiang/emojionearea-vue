@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,EAAE;EACA,KAAK,EAAE,IAAI",
+"sources": ["../../styles/emojionearea.scss"],
+"names": [],
+"file": "emojionearea.css"
+}
