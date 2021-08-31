@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAAA,EAAE;EACA,KAAK,EAAE,IAAI",
+"mappings": "AAAQ,wDAA6C;AAEnD,6BAAa;EACX,aAAa,EAAE,CAAC;EAChB,UAAU,EAAE,GAAG;EACf,kDAAoB;IAClB,MAAM,EAAE,KAAK;AAGjB,qCAAqB;EACnB,UAAU,EAAE,iCAAiC;EAC7C,YAAY,EAAE,OAAO",
 "sources": ["../../styles/emojionearea.scss"],
 "names": [],
 "file": "index.css"

@@ -6,7 +6,11 @@ module.exports = {
     rules: [
       {
         test: /\.vue$/,
-        loader: 'vue-loader',
+        loaders: [
+          {
+            loader: 'vue-loader',
+          },
+        ],
       },
       {
         test: /\.js$/,

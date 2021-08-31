@@ -5,6 +5,8 @@
 </template>
 
 <script>
+import $ from "jquery";
+import 'emojionearea-open/dist/emojionearea.min.js';
 export default {
   name: 'Emojionearea',
   props: {
