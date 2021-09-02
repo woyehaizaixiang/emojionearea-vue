@@ -2,7 +2,7 @@
   "name": "emojionearea-vue",
   "version": "1.0.2",
   "description": "基于emojionearea-open封装的vue插件",
-  "main": "lib/index.js",
+  "main": "lib/emojionearea/index.js",
   "scripts": {
     "build:style": "gulp --gulpfile build/gen-style.js",
     "build:prod": "webpack --config build/webpack.prod.js",

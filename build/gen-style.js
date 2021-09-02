@@ -14,7 +14,7 @@ function buildCss(cb) {
     .pipe(autoprefixer())
     .pipe(cleanCSS())
     .pipe(rename('index.css'))
-    .pipe(gulp.dest('../lib/styles'));
+    .pipe(gulp.dest('../lib'));
   cb()
 }
 
@@ -26,8 +26,8 @@ function buildSeperateCss(cb) {
       }))
       .pipe(autoprefixer())
       .pipe(cleanCSS())
-      .pipe(rename(`${compName}.css`))
-      .pipe(gulp.dest('../lib/styles'));
+      .pipe(rename(`index.css`))
+      .pipe(gulp.dest(`../lib/${compName}`));
   })
   cb()
 }

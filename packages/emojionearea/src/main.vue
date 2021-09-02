@@ -1,6 +1,6 @@
 <template>
   <div class="v-editor-emoji">
-    <textarea ref="textarea"></textarea>
+    <textarea class="textarea" ref="textarea"></textarea>
   </div>
 </template>
 
