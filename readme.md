@@ -3,7 +3,7 @@
 基于[emojioneArea-open](https://github.com/woyehaizaixiang/emojionearea-open)开发的vue表情输入框插件，api请参考[https://github.com/woyehaizaixiang/emojionearea-open#readme](https://github.com/woyehaizaixiang/emojionearea-open#readme)
 
 ## 预览
-![](https://github.com/woyehaizaixiang/emojionearea-open/example/demo.png)
+![](https://github.com/woyehaizaixiang/emojionearea-vue/blob/master/example/demo.png)
 
 ## 使用方法
 
