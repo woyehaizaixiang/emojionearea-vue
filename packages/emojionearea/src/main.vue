@@ -18,17 +18,18 @@ export default {
     },
   },
   mounted(){
-    $(this.$refs.textarea).emojioneArea({
-      ...this.$attrs,
+    let _that = this;
+    $(_that.$refs.textarea).emojioneArea({
+      ..._that.$attrs,
       events:{
         change(){
-          let text = $(this.$refs.textarea)[0].emojioneArea.getText();
-          this.$emit('change',text);
-          this.$emit('input',text);
-          $(this.$refs.textarea)[0].emojioneArea.setText(this.value);
+          let text = $(_that.$refs.textarea)[0].emojioneArea.getText();
+          _that.$emit('change',text);
+          _that.$emit('input',text);
+          $(_that.$refs.textarea)[0].emojioneArea.setText(_that.value);
         },
         onLoad(){
-          $(this.$refs.textarea)[0].emojioneArea.setText(this.value);
+          $(_that.$refs.textarea)[0].emojioneArea.setText(_that.value);
           initState = true;
         },
       }
