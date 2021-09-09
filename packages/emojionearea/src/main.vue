@@ -1,5 +1,5 @@
 <template>
-  <div class="v-editor-emoji" :class="$attrs.disbaled?'disabeld':''">
+  <div class="v-editor-emoji" :class="$attrs.disabled?'disabeld':''">
     <textarea class="textarea" ref="textarea"></textarea>
   </div>
 </template>
@@ -7,6 +7,8 @@
 <script>
 import $ from "jquery";
 import 'emojionearea-open/dist/emojionearea.min.js';
+// 组件初始完成状态
+let initState = false;
 export default {
   name: 'Emojionearea',
   props: {
@@ -27,6 +29,7 @@ export default {
         },
         onLoad(){
           $(this.$refs.textarea)[0].emojioneArea.setText(this.value);
+          initState = true;
         },
       }
     });
@@ -34,7 +37,7 @@ export default {
   watch: {
     value: {
       handler(){
-        if(!$(this.$refs.textarea)[0].emojioneArea) return;
+        if(!initState) return;
         let value = this.value;
         let text = $(this.$refs.textarea)[0].emojioneArea.getText();
         if(text == value) return;

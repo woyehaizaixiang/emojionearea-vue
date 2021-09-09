@@ -15,7 +15,9 @@
     display: none;
   }
   &.disabeld{
-    border: none;
-    box-shadow: none;
+    .emojionearea{
+      border: none;
+      box-shadow: none;
+    }
   }
 }

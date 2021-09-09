@@ -1,6 +1,6 @@
 {
   "name": "emojionearea-vue",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "基于emojionearea-open封装的vue插件",
   "main": "lib/emojionearea/index.js",
   "scripts": {
