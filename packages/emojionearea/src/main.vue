@@ -1,5 +1,5 @@
 <template>
-  <div class="v-editor-emoji">
+  <div class="v-editor-emoji" :class="$attrs.disbaled?'disabeld':''">
     <textarea class="textarea" ref="textarea"></textarea>
   </div>
 </template>
@@ -19,18 +19,22 @@ export default {
     $(this.$refs.textarea).emojioneArea({
       ...this.$attrs,
       events:{
-        change: (editor,event)=>{
+        change(){
           let text = $(this.$refs.textarea)[0].emojioneArea.getText();
           this.$emit('change',text);
           this.$emit('input',text);
+          $(this.$refs.textarea)[0].emojioneArea.setText(this.value);
+        },
+        onLoad(){
+          $(this.$refs.textarea)[0].emojioneArea.setText(this.value);
         },
       }
     });
-    $(this.$refs.textarea)[0].emojioneArea.setText(this.value);
   },
   watch: {
     value: {
       handler(){
+        if(!$(this.$refs.textarea)[0].emojioneArea) return;
         let value = this.value;
         let text = $(this.$refs.textarea)[0].emojioneArea.getText();
         if(text == value) return;

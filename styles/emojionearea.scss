@@ -14,4 +14,8 @@
   textarea{
     display: none;
   }
+  &.disabeld{
+    border: none;
+    box-shadow: none;
+  }
 }
