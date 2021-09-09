@@ -26,7 +26,6 @@ export default {
           let text = $(_that.$refs.textarea)[0].emojioneArea.getText();
           _that.$emit('change',text);
           _that.$emit('input',text);
-          $(_that.$refs.textarea)[0].emojioneArea.setText(_that.value);
         },
         onLoad(){
           $(_that.$refs.textarea)[0].emojioneArea.setText(_that.value);
