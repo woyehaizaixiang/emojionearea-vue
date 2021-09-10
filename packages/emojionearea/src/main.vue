@@ -28,11 +28,11 @@ export default {
           _that.$emit('input',text);
         },
         onLoad(){
-          $(_that.$refs.textarea)[0].emojioneArea.setText(_that.value);
           initState = true;
         },
       }
     });
+    $(_that.$refs.textarea)[0].emojioneArea.setText(_that.value);
   },
   watch: {
     value: {
