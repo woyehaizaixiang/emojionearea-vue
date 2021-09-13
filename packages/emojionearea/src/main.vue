@@ -6,7 +6,7 @@
 
 <script>
 import $ from "jquery";
-import 'emojionearea-open/dist/emojionearea.min.js';
+import 'emojionearea-open/dist/emojionearea.js';
 // 组件初始完成状态
 let initState = false;
 export default {
@@ -29,7 +29,9 @@ export default {
         },
         onLoad(){
           initState = true;
-          $(_that.$refs.textarea)[0].emojioneArea.setText(_that.value);
+          setTimeout(()=>{
+            $(_that.$refs.textarea)[0].emojioneArea.setText(_that.value);
+          },200)
         },
       }
     });
