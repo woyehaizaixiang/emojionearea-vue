@@ -33,7 +33,6 @@ export default {
         },
       }
     });
-    $(_that.$refs.textarea)[0].emojioneArea.setText(_that.value);
   },
   watch: {
     value: {
