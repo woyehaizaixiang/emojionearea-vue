@@ -29,6 +29,7 @@ export default {
         },
         onLoad(){
           initState = true;
+          $(_that.$refs.textarea)[0].emojioneArea.setText(_that.value);
         },
       }
     });
