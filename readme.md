@@ -20,6 +20,7 @@ npm install emojionearea-vue
   <Emojionearea
     v-model="text"
     :search="false"
+    cdn="https://woyehaizaixiang.oss-cn-shanghai.aliyuncs.com/emojionearea"
   ></Emojionearea>
 </template>
 import Emojionearea from "emojionearea-vue";
